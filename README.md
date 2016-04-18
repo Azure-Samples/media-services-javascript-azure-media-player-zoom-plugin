@@ -15,8 +15,7 @@ This is an AMP plugin that enables the video viewer to zoom in on your content. 
 Include the plugin CSS/javascript*after* the AMP script in the `<head>` of your html page:
 
 ```<link href="amp-zoom.css" rel="stylesheet">```<br />
-```<script src="amp-zoom.js"></script>
-```
+```<script src="amp-zoom.js"></script>```
 
 See example.html for how to enable the plugin 
 ## Options
