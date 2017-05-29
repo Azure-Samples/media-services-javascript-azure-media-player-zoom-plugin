@@ -1,13 +1,13 @@
 ---
 services: media-services
 platforms: javascript
-author: 
+author: sraje
 ---
 # Media Services: Zoom Plugin for Azure Media Player
 
 
 ##Information
-Attributions: 
+Attributions: Mariano Converti of Southworks 
 
 #Introduction
 This is an AMP plugin that enables the video viewer to zoom in on your content. A drag-able zoom scale is overlayed over the screen and if the zoom value is higher than 0, user can click and drag to view different parts of the screen. 
