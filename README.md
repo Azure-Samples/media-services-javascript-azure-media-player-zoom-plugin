@@ -3,10 +3,10 @@ services: media-services
 platforms: javascript
 author: sraje
 ---
-## Media Services: Zoom Plugin for Azure Media Player
+# Media Services: Zoom Plugin for Azure Media Player
 
 
-# Information
+## Information
 
 Attributions: Mariano Converti of Southworks 
 
