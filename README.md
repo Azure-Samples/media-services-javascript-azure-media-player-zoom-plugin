@@ -1,8 +1,14 @@
 ---
-services: media-services
-platforms: javascript
-author: sraje
+page_type: sample
+languages:
+- javascript
+- html
+products:
+- azure
+description: "Attributions: Mariano Converti of Southworks "
+urlFragment: media-services-javascript-azure-media-player-zoom-plugin
 ---
+
 # Media Services: Zoom Plugin for Azure Media Player
 
 
