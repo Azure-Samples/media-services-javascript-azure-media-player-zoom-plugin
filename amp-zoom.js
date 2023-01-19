@@ -36,8 +36,13 @@
 
         zoomSlider.addEventListener("change", function () {
             var playerElement = getPlayerElement();
+            var canvasElement = document.getElementsByTagName('canvas')[0];
+            var transformValue = "scale(" + this.value + ")";
 
-            playerElement.style.transform = "scale(" + this.value + ")";
+            canvasElement 
+                ? canvasElement.style.transform = transformValue
+                : playerElement.style.transform = transformValue;
+
             zoomTracker.scale = this.value;
         });
 
