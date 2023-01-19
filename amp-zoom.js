@@ -22,9 +22,12 @@
             zoomTracker = { scale: 1, panX: 0, panY: 0, panActive: false },
             playerContainer = this.el(),
             getPlayerElement = function () {
-                var element = playerContainer.querySelector("video");
+                var element = playerContainer.querySelector("canvas");
                 if (!element) {
-                    element = playerContainer.querySelector("object");
+                    element = playerContainer.querySelector("video");
+                    if (!element) {
+                        element = playerContainer.querySelector("object");
+                    }
                 }
 
                 return element;
@@ -36,12 +39,7 @@
 
         zoomSlider.addEventListener("change", function () {
             var playerElement = getPlayerElement();
-            var canvasElement = document.getElementsByTagName('canvas')[0];
-            var transformValue = "scale(" + this.value + ")";
-
-            canvasElement 
-                ? canvasElement.style.transform = transformValue
-                : playerElement.style.transform = transformValue;
+            playerElement.style.transform = "scale(" + this.value + ")";
 
             zoomTracker.scale = this.value;
         });
