@@ -39,8 +39,8 @@
 
         zoomSlider.addEventListener("change", function () {
             var playerElement = getPlayerElement();
-            playerElement.style.transform = "scale(" + this.value + ")";
 
+            playerElement.style.transform = "scale(" + this.value + ")";
             zoomTracker.scale = this.value;
         });
 
