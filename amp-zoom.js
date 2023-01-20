@@ -22,9 +22,12 @@
             zoomTracker = { scale: 1, panX: 0, panY: 0, panActive: false },
             playerContainer = this.el(),
             getPlayerElement = function () {
-                var element = playerContainer.querySelector("video");
+                var element = playerContainer.querySelector("canvas");
                 if (!element) {
-                    element = playerContainer.querySelector("object");
+                    element = playerContainer.querySelector("video");
+                    if (!element) {
+                        element = playerContainer.querySelector("object");
+                    }
                 }
 
                 return element;
