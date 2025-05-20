@@ -11,6 +11,7 @@ urlFragment: media-services-javascript-azure-media-player-zoom-plugin
 
 # Media Services: Zoom Plugin for Azure Media Player
 
+**IMPORTANT NOTE : Azure Media Services have been retired on June 30, 2024. Please see the [retirement guide](https://learn.microsoft.com/azure/media-services/latest/azure-media-services-retirement).**
 
 ## Information
 
